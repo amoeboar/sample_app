@@ -2,9 +2,12 @@ class CcsfRailsController < ApplicationController
   def index
   end
 
-  def links
+  def help
   end
 
   def about
+  end
+  
+  def contact
   end
 end

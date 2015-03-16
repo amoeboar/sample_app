@@ -1,15 +1,19 @@
 Rails.application.routes.draw do
-  get 'ccsf_rails/index'
+  
+  get 'users/new'
 
-  get 'ccsf_rails/links'
+  # You can have the root of your site routed with "root"
+  root 'ccsf_rails#index'
+  
+  get 'help'   => 'ccsf_rails#help'
+  get 'about'   => 'ccsf_rails#about'
+  get 'contact' => 'ccsf_rails#contact'
+  get 'signup'  => 'users#new'
 
-  get 'ccsf_rails/about'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
-  # You can have the root of your site routed with "root"
-  root 'ccsf_rails#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

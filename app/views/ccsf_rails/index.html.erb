@@ -1,5 +1,12 @@
-<% provide(:title, "Index") %>
-<h1>Index</h1>
-<p>
-  This is the home page for the CS 232: Ruby On Rails Development <a href="http://www.railstutorial.org/">sample application.</a>
-</p>
+<div class="center jumbotron">
+
+  <% provide(:title, "Index") %>
+  <h1>Index</h1>
+  <p>
+    This is the home page for the CS 232: Ruby On Rails Development <a href="http://www.railstutorial.org/">sample application.</a>
+  </p>
+    <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+</div>
+
+<%= link_to image_tag("rails.png", alt: "Rails logo"),
+            'http://rubyonrails.org/' %>
